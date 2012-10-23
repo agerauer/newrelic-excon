@@ -1,0 +1,11 @@
+= newrelic-excon
+
+* http://github.com/helle/newrelic-excon
+
+== DESCRIPTION:
+
+Excon instrumentation for Newrelic.
+
+== INSTALL:
+
+* gem install newrelic-excon
