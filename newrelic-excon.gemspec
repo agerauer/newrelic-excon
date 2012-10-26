@@ -1,7 +1,7 @@
 # -*- encoding: utf-8 -*-
 Gem::Specification.new do |s|
   s.name        = 'newrelic-excon'
-  s.version     = '0.2.1'
+  s.version     = '0.2.2'
   s.license     = "MIT"
   s.summary     = "Excon instrumentation for Newrelic."
   s.authors     = ["Andreas Gerauer"]
