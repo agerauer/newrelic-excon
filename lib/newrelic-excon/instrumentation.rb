@@ -1,4 +1,4 @@
-if defined?(::Excon) and not NewRelic::Control.instance['disable_excon'] and not ENV['NEWRELIC_ENABLE'].to_s =~ /false|off|no/i
+if defined?(::Excon) && !NewRelic::Agent.config[:disable_excon] && !(ENV['NEWRELIC_ENABLE'].to_s =~ /false|off|no/i)
   Excon::Connection.class_eval do
     def request_with_newrelic_trace(params, &block)
       metrics = ["External/#{params[:host]}/Excon::Connection/#{params[:method]}", "External/#{params[:host]}/all", "External/all"]
