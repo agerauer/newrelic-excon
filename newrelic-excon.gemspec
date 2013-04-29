@@ -1,7 +1,7 @@
 # -*- encoding: utf-8 -*-
 Gem::Specification.new do |s|
   s.name        = 'newrelic-excon'
-  s.version     = '0.2.2'
+  s.version     = '0.3'
   s.license     = "MIT"
   s.summary     = "Excon instrumentation for Newrelic."
   s.authors     = ["Andreas Gerauer"]
@@ -15,7 +15,7 @@ Gem::Specification.new do |s|
   end
   
   s.add_dependency('excon')
-  s.add_dependency('newrelic_rpm', '>=3.5')
+  s.add_dependency('newrelic_rpm', '>=3.6.1.87')
   
   s.platform = Gem::Platform::RUBY
 end
