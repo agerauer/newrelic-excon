@@ -2,7 +2,7 @@ if defined?(::Excon) && !NewRelic::Agent.config[:disable_excon] && !(ENV['NEWREL
   Excon::Connection.class_eval do
     def request_with_newrelic_trace(params, &block)
       metrics = ["External/#{params[:host]}/Excon::Connection/#{params[:method]}", "External/#{params[:host]}/all", "External/all"]
-      if NewRelic::Agent::Instrumentation::MetricFrame.recording_web_transaction?
+      if NewRelic::Agent::Transaction.recording_web_transaction?
         metrics << "External/allWeb"
       else
         metrics << "External/allOther"
