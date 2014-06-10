@@ -4,7 +4,7 @@
 
 == DESCRIPTION:
 
-Excon instrumentation for Newrelic.
+Excon instrumentation for `newrelic_rpm` `< 3.6.5`. Since `newrelic_rpm` `>= 3.6.5` there is built in support for excon. Installing this gem with `newrelic_rpm` `>= 3.6.5` will cause SystemStackError errors!
 
 == INSTALL:
 
